@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* 
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -30,4 +30,85 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+} */
+body{
+  background-color: green;
+}
+
+.main {
+  padding: 24px;
+  min-height: 100vh;
+  display: flex;
+  margin: 0 100px;
+  justify-content: center;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+
+}
+.cards-render {
+  display: flex;
+  justify-content: start;
+}
+.draw-card-container{
+  display: flex;
+  justify-content: start;
+  min-width: 720px;
+}
+
+
+.draw-card {
+  width: 100px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  background-color: gray;
+  border-radius: 5px;
+  border: 1px solid gray ;
+  margin-right: 10px;
+}
+.draw-card-container{
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.card-wrapper {
+  display: flex;
+}
+.card-row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-item {
+  width: 100px;
+  height: 150px;
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  position: relative;
+  border-radius: 5px;
+  border: 1px solid gray;
+  font-size: 24px; 
+  margin: 0 10px 10px 0;
+}
+.draw-card:active {
+  transform: scale(0.90);
+}
+.card-item .card-suit {
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+.card-black {
+  color: black;
+}
+.card-red {
+  color: red;
 }
